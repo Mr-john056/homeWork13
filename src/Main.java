@@ -9,7 +9,7 @@ public class Main {
         System.out.println();
         System.out.println(book1);
         System.out.println(book.equals(book1));
-        book.setPublishingYear(1932);
+        book.setPublishingYear(1937);
         System.out.println(book);
 
 
