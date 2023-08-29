@@ -20,8 +20,8 @@ public class Author {
     @Override
     public String toString() {
         return "Author{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
+                "Имя автора: '" + name + '\'' +
+                ", Фамилия автора: '" + surname + '\'' +
                 '}';
     }
 }
