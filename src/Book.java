@@ -28,11 +28,11 @@ public class Book {
     }
 
     @Override
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass())
-        return false;
-        Book book = (Book) other;
-        return authorName.equals(book.authorName);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return publishingYear == book.publishingYear && Objects.equals(authorName, book.authorName) && Objects.equals(bookName, book.bookName);
     }
 
     @Override
